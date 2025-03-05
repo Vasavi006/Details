@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Home = () => {
+export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -47,4 +47,3 @@ const Home = () => {
   );
 };
 
-export default Home;

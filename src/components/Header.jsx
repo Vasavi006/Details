@@ -14,7 +14,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
-            <Image src="/mysite.jpg" alt="Logo" width={150} height={50} layout="intrinsic" className="object-contain" priority />
+            <Image src="/mysite.jpg" alt="Logo" width={150} height={50} intrinsic className="object-contain" priority />
           </Link>
         </div>
 
