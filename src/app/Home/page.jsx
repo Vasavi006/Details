@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Home() {
-  const router = useRouter();
+  const router = useRouter();  
 
   return (
     <div className="flex flex-col min-h-screen">

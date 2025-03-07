@@ -31,7 +31,7 @@ export default function Header() {
             className="text-white focus:outline-none"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
-            <FaBars size={24} />
+            <FaBars size={24} /> 
           </button>
 
           {/* Dropdown Menu (Only on Mobile) */}

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaRocket, FaLightbulb, FaUsers } from "react-icons/fa";
 
-export default function GetStarted() {
+export default function GetStarted() {   
   const router = useRouter();
   useEffect(() => {
     console.log("GetStarted Page Loaded!");
