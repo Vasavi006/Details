@@ -1,15 +1,20 @@
+"use client"
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-600 to-teal-500 text-white text-center py-20 px-6">
         <h1 className="text-5xl font-bold">Welcome to MySite</h1>
         <p className="mt-4 text-lg">Discover the power of innovation and creativity.</p>
-        <button className="mt-6 px-6 py-3 bg-white text-teal-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-          Get Started
-        </button>
+        <button
+  className="mt-6 px-6 py-3 bg-white text-teal-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition"
+  onClick={() => router.push("/get-started")}
+>
+  Get Started
+</button>
         <Image
           src="/HeroImage.jpg"
           alt="Hero Image"

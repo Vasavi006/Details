@@ -17,7 +17,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 p-6">
+<div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 p-6 pt-24">
       <motion.div 
         className="bg-white shadow-2xl rounded-2xl p-8 max-w-lg w-full text-center"
         initial={{ opacity: 0, y: 50 }}

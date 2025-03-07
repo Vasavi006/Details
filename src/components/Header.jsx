@@ -14,13 +14,13 @@ export default function Header() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
-            <Image src="/mysite.jpg" alt="Logo" width={150} height={50} intrinsic className="object-contain" priority />
+            <Image src="/mysite.jpg" alt="Logo" width={150} height={50} intrinsic="true" className="object-contain" priority />
           </Link>
         </div>
 
         {/* Desktop Navigation (Visible on MD and larger screens) */}
         <nav className="hidden md:flex space-x-6">
-          <Link href="/Home" className="hover:underline font-medium">Home</Link>
+          <Link href="/home" className="hover:underline font-medium">Home</Link>
           <Link href="/aboutus" className="hover:underline font-medium">About</Link>
           <Link href="/contact" className="hover:underline font-medium">Contact</Link>
         </nav>
@@ -40,7 +40,7 @@ export default function Header() {
               <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
                 Home
               </Link>
-              <Link href="/about" className="block px-4 py-2 hover:bg-gray-200">
+              <Link href="/aboutus" className="block px-4 py-2 hover:bg-gray-200">
                 About
               </Link>
               <Link href="/contact" className="block px-4 py-2 hover:bg-gray-200">
