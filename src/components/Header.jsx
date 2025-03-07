@@ -37,7 +37,7 @@ export default function Header() {
           {/* Dropdown Menu (Only on Mobile) */}
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 w-40 bg-white text-black shadow-lg rounded-lg overflow-hidden">
-              <Link href="/" className="block px-4 py-2 hover:bg-gray-200">
+              <Link href="/home" className="block px-4 py-2 hover:bg-gray-200">
                 Home
               </Link>
               <Link href="/aboutus" className="block px-4 py-2 hover:bg-gray-200">
