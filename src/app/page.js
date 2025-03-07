@@ -1,15 +1,30 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-600 to-teal-500 text-white text-center py-20 px-6">
         <h1 className="text-5xl font-bold">Welcome to MySite</h1>
         <p className="mt-4 text-lg">Discover the power of innovation and creativity.</p>
-        <button className="mt-6 px-6 py-3 bg-white text-teal-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
+                <button
+          className="mt-6 px-6 py-3 bg-white text-teal-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition"
+          onClick={() => router.push("/get-started")}
+        >
           Get Started
         </button>
+
+        <p className="mt-4">
+          <Link href="/get-started" className="text-white underline">
+            Or click here to get started
+          </Link>
+        </p>
+
         <Image
           src="/HeroImage.jpg"
           alt="Hero Image"
@@ -41,9 +56,6 @@ export default function Home() {
         <p className="mt-4">"This platform transformed the way we work!"</p>
         <p className="mt-2 font-semibold">- Jane Doe</p>
       </section>
-
-      
     </div>
   );
-};
-
+}

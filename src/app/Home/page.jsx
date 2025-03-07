@@ -21,7 +21,7 @@ export default function Home() {
 
         <p className="mt-4">
           <Link href="/get-started" className="text-white underline">
-            Or click here to get started
+            Or click here to get started     
           </Link>
         </p>
 
